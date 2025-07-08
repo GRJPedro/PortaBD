@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="José Pedro Gómez Rodríguez">
+    <meta name="description" content="CV de Pedro Gómez">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, Python, Bootstrap, Geografo, SIG">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Base de Datos</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/briefcase-fill.svg">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!--chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script>
+    <!--chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!--Bootstrap para modal-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Bootstrap para modal-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+              <a class="navbar-brand" href="#">
+                <img src="imagenes/briefcase-fill.svg" width="35" alt="Logo de la página web">
+              </a>
+              <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link active" style="color:rgb(132, 105, 0)" aria-current="page" href="#bdpedro">Bases de Datos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#productos">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
+
+        <!--encabezado con imagen y titulo -->
+        
+        <section id="bdpedro" class="container-fuid">
+          <div class="row head" style="text-align: center;">
+             <div class="head-texto col-9 col-mg-9">
+               <h1>Bases de Datos</h1>
+               <p>Mejora la eficiencia y seguridad de tus proyectos<br> 
+                con mis servicios de diseño y desarrollo de bases de datos.<br>
+                Con experiencia en bases de datos relacionales, NoSQL <br>
+                y bases de datos geoespaciales
+               </p>
+             </div>
+          </div>
+        </section>
+
+        <!--parte donde estan los iconos con los puntos que hago-->
+
+        <section id="productos" class="container-fuid">
+          <div class="row botones d-flex justify-content-evenly">
+            <div class="boton col-12 col-md-2">
+              <a href="#analisis">
+              <i class="bi bi-clipboard-data"></i>
+              <p class="botones-titulo">Análisis</p>
+            </a>
+            </div>
+            <div class="boton col-12 col-md-2">
+              <a href="#bdrelacional">
+              <i class="bi bi-diagram-2"></i>
+              <p class="botones-titulo">Bases de Datos Relacionales</p>
+              </a>
+            </div>
+            <div class="boton col-12 col-md-2">
+              <a href="#bdgeo">
+              <i class="bi bi-map"></i>
+              <p class="botones-titulo">Bases de Datos Geoespaciales</p>
+              </a>
+            </div>
+            <div class="boton col-12 col-md-2">
+              <a href="#manejador">
+              <i class="bi bi-layout-sidebar"></i>
+              <p class="botones-titulo">Servidores y Gestores de Base de Datos</p>
+              </a>
+            </div>   
+          </div>
+        </section>
+
+        <!--Sección Análisis-->
+        <section id="analisis" class="container-fuid">
+          <div class="row prod-izq" >
+            <div class="col-sm-12 col-md-4 col-lg-4 img-analisis">
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 desc-prod">
+              <h1>Análisis de Base de Datos</h1>
+              <p>Estas son las principales acciones que realizo:
+              </p>
+              <ul>
+                <li>Estimación del Tamaño de la Base de Datos</li>
+                <li>Selección del Servidor</li>
+                <li>Selección del Manejador de Base de Datos</li>
+                <li>Herramientas y Técnicas</li>
+              </ul>
+              
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+                Ver más  <i class="bi bi-plus"></i>
+              </button>
+            </div>
+            <!-- Modal Analisis -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                  <!-- Modal Titulo -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Análisis de Base de Datos</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- Modal Cuerpo -->
+                  <div class="modal-body nodal">
+                    <div class="nodal-seccion">
+                      <h4>Estimación del Tamaño de Base de Datos</h4>
+                      <ul>
+                        <li>Se identifican los requisitos de almacenamiento, como determinar tipos y cantidad de 
+                          datos
+                        </li>
+                        <li>Se estima el crecimiento de datos proyectando el aumento de datos en el tiempo
+                        </li>
+                        <li>Se calcula el tamaño inicial considerando factores, como índices, vistas y espacios 
+                          de almacenamiento
+                        </li>
+                        <li>Se consideran factores de escala, como crecimiento esperado, tráfico y usuarios</li>
+                      </ul>
+                      <img src="imagenes/mod_bd_1.png">
+                    </div>
+
+                    <div class="nodal-seccion">
+                      <h4>Selección del Servidor</h4>
+                      <ul>
+                        <li>Se identifican los requisitos de procesamiento, como determinar el tipo de CPU, 
+                          memoria y almacenamiento
+                        </li>
+                        <li>Se evaluan las opciones de infraestructura, como servidores físicos, virtuales, cloud o 
+                          hibridos, en esta evaluación se determina el uso de servidores de bases de datos geoespaciales
+                        </li>
+                        <li>Se consideran factores de escalabilidad, como el creciemiento esperado y capacidad de expansión
+                        </li>
+                        <li>Se evaluan costos y presupuestos</li>
+                      </ul>
+                     <img src="imagenes/mod_bd_2.png">
+                    </div> 
+
+                    <div class="nodal-seccion">
+                      <h4>Selección del Manejador de Base de Datos</h4>
+                      <ul>
+                        <li>Se identifican los requisitos de gestión, como determinar necesidades de seguridad, backup y 
+                          recuperación
+                        </li>
+                        <li>Se evaluan las opciones de manejadores como MySQL, PostgreSQL, MongoDB, Oracle, etc.
+                        </li>
+                        <li>Se consideran factores de compatibilidad como el Sistema Operativo y lenguajes de programación
+                        </li>
+                        <li>Se evaluan costos y soporte</li>
+                      </ul>
+                     <img src="imagenes/mod_bd_3.png">
+                    </div> 
+
+                    <div class="nodal-seccion">
+                      <h4>Herramientas y Técnicas</h4>
+                      <ul>
+                        <li>Se analizan los requisitos funcionales y no funcionales
+                        </li>
+                        <li>Se hace un modelado de datos (Entidad-Relación, UML)
+                        </li>
+                        <li>Se calcula el tamaño y creciemiento de datos
+                        </li>
+                        <li>Se evaluan las herramientas de gestión de bases de datos</li>
+                      </ul>
+                     <img src="imagenes/mod_bd_4.png">
+                    </div> 
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Seccion Base de Datos Relacionales-->
+        <section id="bdrelacional"class="container-fuid"></section>
+          <div class="row prod-der">
+            <div class="col-sm-12 col-md-8 col-lg-8 desc-prod">
+              <h1>Bases de Datos Relacionales</h1>
+              <p>Estas son las principales acciones que realizo en las Bases de Datos Relacionales:
+              </p>
+              <ul>
+                <li>Identificar entidades, atributos y llaves</li>
+                <li>Identificación de relaciones y cardinalidad</li>
+                <li>Diagramación (Modelo Entidad-Relación)</li>
+                <li>Normalización de Base de Datos</li>
+                <li>Refinar el Diseño, comprobación y medición</li>
+              </ul>
+              
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#bdr">
+                Ver más  <i class="bi bi-plus"></i>
+              </button>
+            </div>
+
+            <!--Modal BDrelacioanl-->
+            <div class="modal" id="bdr">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                  <!-- Modal Titulo -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Diagramación en Bases de Datos Relacionales</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body nodal">
+                    <div class="nodal-seccion">
+                      <h4>Identificar las Entidades, Atributos</h4>
+                      <ul>
+                        <li>Identifico las entidades principales del sistema
+                        </li>
+                        <li>Las entidades las convierto en tablas
+                        </li>
+                        <li>Para cada entidad defino sus atributos (campos o columnas)
+                        </li>
+                      </ul>
+                      <img src="imagenes/mod2_bd_1.png">
+                    </div>
+
+                    <div class="nodal-seccion">
+                      <h4>Establecer Relaciones y Cardinalidad</h4>
+                      <ul>
+                        <li>Identifico la interacción o asociación entre entidades, definiendo si son relaciones fuertes, debiles o recursivas
+                        </li>
+                        <li>Identifico la cardinalidad, con el número de entidades que pueden ser asociadas con otras entidades, ya sea uno a uno, uno a muchos y muchos a muchos
+                        </li>
+                      </ul>
+                     <img src="imagenes/mod2_bd_2.png">
+                    </div> 
+
+                    <div class="nodal-seccion">
+                      <h4>Crear el Modelo Entidad-Relación (MER) </h4>
+                      <ul>
+                        <li>Se realiza un diagrama de flujo representando la relación entre las entidades y como participan en el proceso del negocio, tanto dentro como fuera del sistema
+                        </li>
+                        <li>Para la diagramación utilizo herramientas como SmartDraw y LucidChart
+                        </li>
+                      </ul>
+                     <img src="imagenes/mod2_bd_3.png">
+                    </div> 
+
+                    <div class="nodal-seccion">
+                      <h4>Normalizar y Definir Llaves </h4>
+                      <ul>
+                        <li>Se eliminan datos redundantes y se crean nuevas tablas
+                        </li>
+                        <li>Se establecen llaves primarias paa cada tabla
+                        </li>
+                        <li>Se establecen llaves foraneas para relacionar las tablas</li>
+                      </ul>
+                     <img src="imagenes/mod2_bd_4.png">
+                    </div> 
+
+                    <div class="nodal-seccion">
+                      <h4>Refinar el Diseño </h4>
+                      <ul>
+                        <li>Se verifica la consistencia y coherencia del diseño
+                        </li>
+                        <li>Se revisa que el diseño sea escalable y flexible
+                        </li>
+                      </ul>
+                     <img src="imagenes/mod2_bd_5.png">
+                    </div> 
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 img-bdrelacional">
+            </div>
+          </div>
+        </section>
+
+        <!--Sección Base de Datos Geografica-->
+        <section id="bdgeo" class="container-fuid">
+          <div class="row prod-izq" >
+            <div class="col-sm-12 col-md-4 col-lg-4 img-bdgeografica">
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 desc-prod">
+              <h1>Bases de Datos Geoespaciales</h1>
+              <p>Las Bases de Datos Geoespaciales (BDG) son sistemas de información que almacenan, gestionan y analizan datos georreferenciados. 
+                Permiten la integración de datos espaciales y no espaciales para realizar consultas y análisis geográficos.
+                Estas son algunos de mis productos con Bases de Datos Geoespaciales, así como Servidores Geográficos:
+              </p>
+              <ul>
+                <li>Análisis de Bases de Datos Geoespacial</li>
+                <li>Selección del Tipo de Base de Datos Geoespacial</li>
+                <li>Herramientas y Tecnologías</li>
+                <li>Aplicaciones de Bases de Datos Geoespaciales</li>
+              </ul>
+              
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#bdg">
+                Ver más  <i class="bi bi-plus"></i>
+              </button>
+            </div>
+            <!-- Modal Analisis -->
+            <div class="modal" id="bdg">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                  <!-- Modal Titulo -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Bases de Datos Geoespaciales</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- Modal Cuerpo -->
+                  <div class="modal-body nodal">
+                    <div class="nodal-seccion">
+                      <h4>Análisis de Base de Datos Geoespacial</h4>
+                      <ul>
+                        <li>Se analiza la información geográfica y no geográfica que será almacenada, así como la delimitación espacial (extends) y la proyección y datum que llevara
+                        </li>
+                        <li>Se determinan el tipo de datos que se almacenaran y serán compartidos con servidores y Sistemas de Información Geográfica como (shapefile, KML, GeoJason, .tab)
+                        </li>
+                        <li>Se determinan las herramientas y los algoritmos que se usarán en los análisis que se llevaran a cabo en la Base de Datos Geoespacial
+                        </li>
+                        <li>Se definen las herramientas de consulta y visualización de los datos y mapas
+                        </li>
+                      </ul>
+                      <img src="imagenes/mod3_bd_1.png">
+                    </div>
+
+                    <div class="nodal-seccion">
+                      <h4>Selección de la Base de Datos Geoespacial</h4>
+                      <ul>
+                        <li>Se identifican el tipo de dato geografico como información Vectorial, información Raster (imágenes de satélite o modelos digitales de elevación) o información red (análisis de redes)
+                        </li>
+                        <li>Se determina la base de datos geoespacial óptima para el tipo de dato geografico, seguridad factores de escalabilidad, como el creciemiento esperado y capacidad de expansión
+                        </li>
+                        <li>Se evaluan costos y presupuestos
+                        </li>
+                      </ul>
+                     <img src="imagenes/mod3_bd_2.png">
+                    </div>  
+
+                    <div class="nodal-seccion">
+                      <h4>Herramientas y Tecnologías</h4>
+                      <ul>
+                        <li>PostgreSQL con su extensión PostGIS
+                        </li>
+                        <li>Geodatabase de ESRI
+                        </li>
+                        <li>GeoServer
+                        </li>
+                        <li>MongoDB
+                        </li>
+                        <li>QGIS
+                        </li>
+                        <li>ArcGIS
+                        </li>
+                      </ul>
+                     <img src="imagenes/mod3_bd_3.png">
+                    </div> 
+
+                    <div class="nodal-seccion">
+                      <h4>Temas donde aplico las Bases de Datos Geoespaciales</h4>
+                      <ul>
+                        <li>Planificación urbana y territorial
+                        </li>
+                        <li>Gestión de recursos naturales
+                        </li>
+                        <li>Logística y transporte
+                        </li>
+                        <li>Emergencias y riesgos
+                        </li>
+                        <li>Salud pública y epidemiología
+                        </li>
+                        <li>Análisis de mercado y comercio
+                        </li>
+                      </ul>
+                     <img src="imagenes/mod3_bd_4.png">
+                    </div>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Seccion Manejadores de Base de Datos-->
+        <section id="manejador"class="container-fuid"></section>
+          <div class="row prod-der">
+            <div class="col-sm-12 col-md-8 col-lg-8 desc-prod">
+              <h1>Servidores y Gestores de Bases de Datos</h1>
+              <p>Estos son los principales Servidores y Gestores de Base de Datos que uso:
+              </p>
+              <ul>
+                <li>MySQL (Server)</li>
+                <li>PostgreSQL (Server) </li>
+                <li>MongoDB</li>
+              </ul>
+              
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#SGBD">
+                Ver más  <i class="bi bi-plus"></i>
+              </button>
+            </div>
+
+            <!--Modal BDrelacioanl-->
+            <div class="modal" id="SGBD">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                  <!-- Modal Titulo -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Gestores de Base de Datos</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body nodal">
+                    <div class="nodal-seccion">
+                      <h4>SQL</h4>
+                      <ul>
+                        <li style="list-style-type: none;">Estos son los principales SGBD que uso en Modelos de Datos Relacionales:
+                          <ul>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                          </ul>
+                        </li>
+                        <li style="list-style-type: none;">Estos debido a:
+                          <ul>
+                            <li>Su soporte en transacciones</li>
+                            <li>Seguridad y autenticación</li>
+                            <li>Escalabilidad y rendimiento</li>
+                            <li>Con la extensión PostGIS puedo trabajar con información geográfica</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <img src="imagenes/mod4_bd_1.png">
+                    </div>
+
+                    <div class="nodal-seccion">
+                      <h4>No SQL</h4>
+                      <ul>
+                        <li style="list-style-type: none;">El SGBD que uso para manejar datos No SQL es MongoDB debido a:
+                          <ul>
+                            <li>No relacional por lo cual trabajo con colecciones y documentos</li>
+                            <li>Se puede trabajar con información Geoespacial, creando ínidices geoespaciales y un modelo de datos optimizado</li>
+                          </ul>
+                        </li>
+                
+                      </ul>
+                      <img src="imagenes/mod4_bd_2.png">
+                    </div>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 img-bdmanejador">
+            </div>
+          </div>
+        </section>
+
+       <!--sección footer-->
+
+        <section id="contacto" class="container-fuid">
+          <div class= "row footer d-flex flex-column align-items-center justify-content-center">
+            <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+            <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+              <a href="https://x.com/pedrogo62967054?s=11" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://github.com/GRJPedro" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/josé-pedro-gómez-rodríguez-61851566" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/pedrogomez_geo/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="mailto:pedrogomez.geo@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+              </a>
+            </div>
+            <div class="derechos-de-autor">Creado Pedro Gómez (2025) &#169;</div>
+          </div>
+        </section>
+  </body>
+</html>
